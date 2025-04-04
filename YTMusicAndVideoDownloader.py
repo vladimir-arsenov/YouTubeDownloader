@@ -170,8 +170,8 @@ def mp4_to_mp3(mp4_file_path: str):
 
 # SET THIS UP:
 # url must be YT url, path may not exist (presumably):
-URL = "https://youtu.be/DtmwtjOoSYU?si=nXRaGG5fWJldY7zH"
-PATH = "D:\\Music1\\y"
+URL = "https://youtu.be/XXXXXXXXXXXXXXXXXXXX"
+PATH = "D:\\Music\\y"
 
 # UNCOMMENT AND RUN ONE OF THE FOLLOWING METHODS:
 #get_as_audio(URL, PATH)
@@ -179,7 +179,7 @@ PATH = "D:\\Music1\\y"
 # YTMusicAndVideoDownloader.get_playlist_as_video(URL, PATH)
 # get_playlist_as_audio(URL, PATH)
 
-mp4_to_mp3("D:\Music1\y\mp4\Dr Robert Sapolsky Science of Stress Testosterone & Free Will.mp4")
+mp4_to_mp3("D:\Music\mp4\xxx.mp4")
 
 # HINTS:
 # 1) replace 'music' to 'www' in YTMusic path, and you'll get YT url
@@ -188,13 +188,3 @@ mp4_to_mp3("D:\Music1\y\mp4\Dr Robert Sapolsky Science of Stress Testosterone & 
 # go to YTMusic, to 'Likes' - here you'll have 'select' option -
 # select tracks/videos that you need and add to the playlist you've created
 # 4) do not download to the project folder
-
-# FLAWS:
-# 1) if name contains characters that are not allowed by the file system (', ", /, \, ?, etc.),
-# the characters will be omitted
-# For audio download:
-# 2) program does not set up album for mp3 tracks
-# 3) if file is a video in YTMusic, the cover of the resulting mp3 will be plain black picture
-# 4) program downloads video even when get_audio and get_playlist_as_audio are called ->
-# -> video and png files must be deleted manually (saved in folders: 'mp4', 'png')
-
